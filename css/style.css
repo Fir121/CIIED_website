@@ -10,5 +10,17 @@
     --accent-colour: #3c3c3c;
     --primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Lato', sans-serif;
+    --font-size-large: clamp(1rem, 10vw, 2rem);;
+    --font-size-normal: clamp(1rem, 2.5vw, 1rem);
 }
 /*END*/
+
+body{
+    font-family: var(--primary-font);
+    font-size: var(--font-size-normal);
+}
+
+#maindiv{
+    color: var(--secondary-colour);
+    background-color: var(--primary-colour);
+}
