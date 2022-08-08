@@ -1,6 +1,14 @@
+/*FONTS*/
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('http://fonts.cdnfonts.com/css/lato');
+/*END*/
+
+/*VARIABLES*/
 :root {
     --primary-colour: white;
     --secondary-colour: black;
-
+    --accent-colour: #3c3c3c;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Lato', sans-serif;
 }
-  
+/*END*/
