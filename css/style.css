@@ -15,6 +15,17 @@
 }
 /*END*/
 
+/*NavBAR CSS*/
+.navbar-custom{
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.5s ease-in-out;
+}
+/*END*/
+
+/*MAIN DIVS*/
 body{
     font-family: var(--primary-font);
     font-size: var(--font-size-normal);
@@ -23,4 +34,74 @@ body{
 #maindiv{
     color: var(--secondary-colour);
     background-color: var(--primary-colour);
+    font-family: var(--primary-font);
+}
+/*END*/
+
+/*PARALLAX CSS*/
+.parallax-acronym{
+    position: fixed;
+    height: max(90vh, 10rem);
+    width:100vw;
+    z-index: 0;
+    background-color: white;
+    margin-top: 20vh;
+    overflow:hidden;    
+}
+
+.text-container{
+    margin: auto;
+    text-align: left;
+    font-size: 10vh;
+    font-weight: bolder;
+    width: 50vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .text-container {
+        word-wrap: break-word;
+        font-size: 5vh;
+        width: 95vw;
+    }
+  }
+
+  .hidethis{
+    opacity: 1;
+    font-style: normal;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+/*END*/
+
+/*CONTENT CSS*/
+.content-above{
+    position:absolute;
+    top: max(90vh, 10rem);
+    width:100vw;
+}
+
+.image-container{
+    width:100vw;
+    height:fit-content;
+    padding-top:10vh;
+    overflow: hidden;
+    
+    z-index: 0;
+    top:0;
+}
+
+.image-bits{
+    width: max(100vw, 50rem);
+    height:auto;
+}
+/*END*/
+
+.content{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    background-color:black;
+    height:200vh;
+    width: 100vw;
 }
