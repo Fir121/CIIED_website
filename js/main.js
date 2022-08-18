@@ -3,17 +3,31 @@ addEventListener('scroll', (event) => {
 
     // Parallax
     if (document.getElementById("conts").getBoundingClientRect().top >= document.getElementById('bitsimage').getBoundingClientRect().height){
-        document.getElementById("conts").style.marginTop = "0px";
-        document.getElementById("bitsimage").style.position = "static";
+        if (document.getElementById("conts").style.marginTop != "0px"){
+            document.getElementById("conts").style.marginTop = "0px";
+        }
+        if (document.getElementById("bitsimage").style.position != "static"){
+            document.getElementById("bitsimage").style.position = "static";
+        }
     }
     else if (document.getElementById("bitsimage").getBoundingClientRect().top <= 0){
-        document.getElementById("conts").style.marginTop = document.getElementById('bitsimage').getBoundingClientRect().height+'px';
-        document.getElementById("bitsimage").style.position = "fixed";
-        document.getElementById("bitsimage").style.top = "0";
+        if (document.getElementById("conts").style.marginTop != document.getElementById('bitsimage').getBoundingClientRect().height+'px'){
+            document.getElementById("conts").style.marginTop = document.getElementById('bitsimage').getBoundingClientRect().height+'px';
+        }
+        if (document.getElementById("bitsimage").style.position != "fixed"){
+            document.getElementById("bitsimage").style.position = "fixed";
+        }
+        if (document.getElementById("bitsimage").style.top != "0px"){
+            document.getElementById("bitsimage").style.top = "0px";
+        }
     }
     else{
-        document.getElementById("conts").style.marginTop = "0px";
-        document.getElementById("bitsimage").style.position = "static";
+        if (document.getElementById("conts").style.marginTop != "0px"){
+            document.getElementById("conts").style.marginTop = "0px";
+        }
+        if (document.getElementById("bitsimage").style.position != "static"){
+            document.getElementById("bitsimage").style.position = "static";
+        }
     }
 
 
