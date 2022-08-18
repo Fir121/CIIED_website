@@ -39,7 +39,7 @@ body{
 /*PARALLAX CSS*/
 .parallax-acronym{
     position: fixed;
-    height: max(100vh, 9rem);
+    height: 100vh;
     width:100vw;
     z-index: 0;
     background-image: url("/assets/background.gif");
@@ -80,7 +80,7 @@ body{
 /*CONTENT CSS*/
 .content-above{
     position:absolute;
-    top: max(80vh, 9rem);
+    top: 80vh;
     width:100vw;
 }
 
