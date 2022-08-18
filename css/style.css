@@ -81,6 +81,8 @@ body{
 .content-above{
     position:absolute;
     top: 80vh;
+    left:0;
+    right:0;
     width:100vw;
 }
 
