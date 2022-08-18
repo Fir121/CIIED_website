@@ -81,9 +81,8 @@ body{
 .content-above{
     position:absolute;
     top: 80vh;
-    left:0;
-    right:0;
     width:100vw;
+    overflow:hidden;
 }
 
 .image-container{
@@ -103,7 +102,7 @@ body{
 /*END*/
 
 .content{
-    position: absolute;
+    position:sticky;
     z-index: 2;
     color: var(--secondary-colour);
     background-color:var(--primary-colour);

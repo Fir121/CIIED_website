@@ -3,9 +3,8 @@ addEventListener('scroll', (event) => {
 
     // Parallax
     if (document.getElementById("conts").getBoundingClientRect().top >= document.getElementById('bitsimage').getBoundingClientRect().height){
-        document.getElementById("conts").style.marginTop = "0"+'px';
         document.getElementById("conts").style.marginTop = "0px";
-        document.getElementById("bitsimage").style.position = "relative";
+        document.getElementById("bitsimage").style.position = "static";
     }
     else if (document.getElementById("bitsimage").getBoundingClientRect().top <= 0){
         document.getElementById("conts").style.marginTop = document.getElementById('bitsimage').getBoundingClientRect().height+'px';
@@ -13,9 +12,8 @@ addEventListener('scroll', (event) => {
         document.getElementById("bitsimage").style.top = "0";
     }
     else{
-        document.getElementById("conts").style.marginTop = "0"+'px';
         document.getElementById("conts").style.marginTop = "0px";
-        document.getElementById("bitsimage").style.position = "relative";
+        document.getElementById("bitsimage").style.position = "static";
     }
 
 
