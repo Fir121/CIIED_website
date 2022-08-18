@@ -1,4 +1,4 @@
-// SCROLL EFFECTS - Header Shadow, BITS PARALLAX 
+// SCROLL EFFECTS - Header Shadow, BITS PARALLAX, TEXT APPEARANCE
 addEventListener('scroll', (event) => {
 
     // Parallax
@@ -18,18 +18,23 @@ addEventListener('scroll', (event) => {
         document.getElementById("bitsimage").style.position = "relative";
     }
 
+
     //  Header Shadow
     if (this.scrollY == 0){
+        document.getElementById("topnav").style.boxShadow  = "0 0 0 0";
+    }
+    else{
         document.getElementById("topnav").style.boxShadow  = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-        
+    }
+
+    //  TEXT APPEARANCE
+    if (this.scrollY <= 100){
         acronym = document.getElementsByClassName("hidethis");
         for (let i=0; i<acronym.length; i++){
             acronym[i].style.opacity = "1";
         }
     }
     else{
-        document.getElementById("topnav").style.boxShadow  = "0 0 0 0";
-
         acronym = document.getElementsByClassName("hidethis");
         for (let i=0; i<acronym.length; i++){
             acronym[i].style.opacity = "0";

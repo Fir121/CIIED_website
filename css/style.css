@@ -17,10 +17,10 @@
 
 /*NavBAR CSS*/
 .navbar-custom{
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
     background-color: rgba(255,255,255,0.72);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 0 0;
     transition: box-shadow 0.5s ease-in-out;
 }
 /*END*/
@@ -41,9 +41,10 @@ body{
 /*PARALLAX CSS*/
 .parallax-acronym{
     position: fixed;
-    height: max(90vh, 10rem);
+    height: max(100vh, 9rem);
     width:100vw;
     z-index: 0;
+    background-image: url("/assets/background.gif");
     background-color: white;
     margin-top: 20vh;
     overflow:hidden;    
@@ -77,14 +78,14 @@ body{
 /*CONTENT CSS*/
 .content-above{
     position:absolute;
-    top: max(90vh, 10rem);
+    top: max(80vh, 9rem);
     width:100vw;
 }
 
 .image-container{
     width:100vw;
     height:fit-content;
-    padding-top:10vh;
+    padding-top:max(10vh, 2rem);
     overflow: hidden;
     
     z-index: 0;
@@ -100,8 +101,25 @@ body{
 .content{
     position: absolute;
     z-index: 2;
-    color: white;
-    background-color:black;
+    color: var(--secondary-colour);
+    background-color:var(--primary-colour);
     height:200vh;
     width: 100vw;
+}
+
+/* TEXT TYPES */
+.heading{
+    font-size: var(--font-size-large);
+    font-weight: bolder;
+}
+
+.normal{
+    font-size: var(--font-size-normal);
+    text-align:justify;  
+    text-justify:auto;
+}
+
+.alt-bg{
+    color: var(--primary-colour);
+    background-color: var(--secondary-colour);
 }
