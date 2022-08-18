@@ -26,7 +26,7 @@ addEventListener('scroll', (event) => {
     }
 
     //  TEXT APPEARANCE
-    if (this.scrollY <= 100){
+    if (this.scrollY <= 125){
         acronym = document.getElementsByClassName("hidethis");
         for (let i=0; i<acronym.length; i++){
             acronym[i].style.opacity = "1";
