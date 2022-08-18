@@ -129,6 +129,7 @@ body{
 .alt-bg{
     color: var(--primary-colour);
     background-color: var(--secondary-colour);
+    overflow:hidden;
 }
 
 /* FOOTER */
