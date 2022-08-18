@@ -1,13 +1,12 @@
 // SCROLL EFFECTS - Header Shadow, BITS PARALLAX, TEXT APPEARANCE
 addEventListener('scroll', (event) => {
-
     // Parallax
     if (document.getElementById("conts").getBoundingClientRect().top >= document.getElementById('bitsimage').getBoundingClientRect().height){
         if (document.getElementById("conts").style.marginTop != "0px"){
             document.getElementById("conts").style.marginTop = "0px";
         }
-        if (document.getElementById("bitsimage").style.position != "static"){
-            document.getElementById("bitsimage").style.position = "static";
+        if (document.getElementById("bitsimage").style.position != ""){
+            document.getElementById("bitsimage").style.position = "";
         }
     }
     else if (document.getElementById("bitsimage").getBoundingClientRect().top <= 0){
@@ -15,18 +14,11 @@ addEventListener('scroll', (event) => {
             document.getElementById("conts").style.marginTop = document.getElementById('bitsimage').getBoundingClientRect().height+'px';
         }
         if (document.getElementById("bitsimage").style.position != "fixed"){
+            alert("changing");
             document.getElementById("bitsimage").style.position = "fixed";
         }
         if (document.getElementById("bitsimage").style.top != "0px"){
             document.getElementById("bitsimage").style.top = "0px";
-        }
-    }
-    else{
-        if (document.getElementById("conts").style.marginTop != "0px"){
-            document.getElementById("conts").style.marginTop = "0px";
-        }
-        if (document.getElementById("bitsimage").style.position != "static"){
-            document.getElementById("bitsimage").style.position = "static";
         }
     }
 
