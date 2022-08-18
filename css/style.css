@@ -17,9 +17,7 @@
 
 /*NavBAR CSS*/
 .navbar-custom{
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
-    background-color: rgba(255,255,255,0.72);
+    background-color: rgba(255,255,255,1);
     box-shadow: 0 0 0 0;
     transition: box-shadow 0.5s ease-in-out;
 }
@@ -45,6 +43,10 @@ body{
     width:100vw;
     z-index: 0;
     background-image: url("/assets/background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
     background-color: white;
     margin-top: 20vh;
     overflow:hidden;    
@@ -103,7 +105,7 @@ body{
     z-index: 2;
     color: var(--secondary-colour);
     background-color:var(--primary-colour);
-    height:200vh;
+    height:fit-content;
     width: 100vw;
 }
 
@@ -111,6 +113,11 @@ body{
 .heading{
     font-size: var(--font-size-large);
     font-weight: bolder;
+}
+
+.heading a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .normal{
@@ -122,4 +129,14 @@ body{
 .alt-bg{
     color: var(--primary-colour);
     background-color: var(--secondary-colour);
+}
+
+/* FOOTER */
+.footerstuff{
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    width: 100vw;
+    height: fit-content;
+    padding: 3vh;
+    margin-top: 8vh;
 }
