@@ -14,7 +14,6 @@ addEventListener('scroll', (event) => {
             document.getElementById("conts").style.marginTop = document.getElementById('bitsimage').getBoundingClientRect().height+'px';
         }
         if (document.getElementById("bitsimage").style.position != "fixed"){
-            alert("changing");
             document.getElementById("bitsimage").style.position = "fixed";
         }
         if (document.getElementById("bitsimage").style.top != "0px"){
