@@ -1,3 +1,3 @@
 ## Repo for website
 
-Temporary hosting at (netlify)[https://ciied.netlify.com]
+Temporary hosting at [Netlify](https://ciied.netlify.com)
