@@ -54,7 +54,7 @@ addEventListener('scroll', (event) => {
     }
 });
 
-// Parallax CIIED Bg background
+// Parallax CIIED Bg background Margin to be below the navbar
 function changeMargin(){
     document.getElementById("prlx-div").style.marginTop = document.getElementById('topnav').getBoundingClientRect().height+'px';
 }
