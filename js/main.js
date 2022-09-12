@@ -31,7 +31,7 @@ addEventListener('scroll', (event) => {
     }
 
     //  TEXT APPEARANCE
-    if (this.scrollY <= 125){
+    if (this.scrollY <= 225){
         acronym = document.getElementsByClassName("hidethis");
         for (let i=0; i<acronym.length; i++){
             acronym[i].style.opacity = "1";
@@ -42,6 +42,7 @@ addEventListener('scroll', (event) => {
         for (let i=0; i<acronym.length; i++){
             acronym[i].style.opacity = "0";
         }
+        document.getElementById("js_scrollPrompt").style.display = "none";
     }
 });
 
@@ -51,3 +52,25 @@ function changeMargin(){
 }
 
 new ResizeObserver(changeMargin).observe(document.getElementById("prlx-div"));
+
+
+//letter by letter print
+function printLetterByLetter(destination, message, speed){
+    var i = 0;
+    var interval = setInterval(function(){
+        if (message.charAt(i) == "<"){
+            document.getElementById(destination).innerHTML += "<br>";
+            i += 4
+            return;
+        }
+        document.getElementById(destination).innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            clearInterval(interval);
+            // show scroll prompt
+            document.getElementById("js_scrollPrompt").style.display = "block";
+        }
+    }, speed);
+}
+
+printLetterByLetter("lbyl", "Ideas are easy.<br><br>Implementation is hard.", 100);
