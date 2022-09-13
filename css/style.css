@@ -355,3 +355,10 @@ iframe{
     min-width: 170px;
   }
 }
+
+@media (max-width: 1000px) {
+  .carousel-item{
+    padding-left:6vw !important;
+    padding-right:6vw !important;
+  }
+}
