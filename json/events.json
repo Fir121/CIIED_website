@@ -1,0 +1,31 @@
+{
+    "events":[
+        {
+            "name":"Empower",
+            "desc":"EmPower organised by CIIED and WSC teams is a one of its kind business and entrepreneurship festival held on the grounds of BITS PILANI Dubai Campus. EmPower was brought by co-organizer's Kregzo  and title partner Zoho, payment partner Tap payments, F&B partner Hunter Foods, Printing Partner Desco, and Bronze Partner Revolution Swimming Academy.  The festival witnessed students from several Universities across UAE which include SP Jain School of Global Management, Dubai, Manipal University Dubai, Amity University and more. EmPower featured strategic  and fun business events such as the Pitch Verse, faculty pitch, CEO Club, Mock Stock ,IPL Auction, Money Heist, CEO Club etc.",
+            "coverimage":"https://i.postimg.cc/66zg5Tgm/empower.jpg",
+            "otherimages":[
+                "https://i.postimg.cc/8kqKCWww/empower1.png",
+                "https://i.postimg.cc/28hHL6KY/empower2.png",
+                "https://i.postimg.cc/59HK1p56/empower3.png",
+                "https://i.postimg.cc/FR6SDy16/empower4.png"
+            ]
+        },
+        {
+            "name":"Talk with Dev Gupta",
+            "desc":"Team CIIED presented an on-campus talk on entrepreneurship and future potential for all UG students. Mr. Dev Gupta, the guest speaker and alumnus of the BITS PILANI Dubai campus who works in the CEO's office at noon, presented his vast expertise in developing and growing organisations. His sage advice motivated students to seek greater heights.",
+            "coverimage":"https://i.postimg.cc/tCJq9KSF/unnamed.png",
+            "otherimages":[
+                "https://i.postimg.cc/rwJ2WgPq/dev1.png",
+                "https://i.postimg.cc/T2LxSVpc/dev2.png"
+
+            ]
+        },
+        {
+            "name":"Founders Den",
+            "desc":"Founder’s Den is a pitch and networking event , organised by BPDC in collaboration with Mr. Nitin Bhalla, co-founder of Kregzo. The event witnessed several 3 minute elevator pitches from various students of BPDC, followed by a questioning round. The event highlighted new start up ideas and young entrepreneurs, learned more about ventures from the networking session among themselves.",
+            "coverimage":"https://i.postimg.cc/157ptZ9S/foun.png",
+            "otherimages":[]
+        }
+    ]
+}
