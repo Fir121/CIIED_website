@@ -537,3 +537,16 @@ outline:none;
 
   }
 /* end ourteam html */
+
+/* joinus html */
+ .stuffstext{
+  font-size: larger;
+  
+ }
+
+ .horizontalline{
+  background-color: #000;
+  width: 1px;
+  border-radius: 999px;
+ }
+/* end join us html */

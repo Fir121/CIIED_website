@@ -20,9 +20,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css"/>
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.3.0/dist/js/splide-extension-url-hash.min.js"></script>
     </head>
 
-    <body style="background-color:black;">
+    <body>
         <!--HEADER BAR-->
         <nav class="navbar navbar-custom fixed-top navbar-expand-lg" id="topnav">
             <div class="container-fluid">
@@ -32,8 +36,8 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="/aboutus.html">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/aboutus.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/ourteam.html">Our Team</a>
@@ -54,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/events.html">Events</a>
+                            <a class="nav-link active" href="/events.html">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/joinus.html">Join Us</a>
@@ -68,51 +72,30 @@
         </nav>
         <!--END HEADER BAR-->
 
-        <div class="container" id="maincontent" style="min-height:90vh;background-color: white;border-radius: 0 0 20px 20px;">
-            <div class="row">
-                <h1 class="specialeyecatching">Who Are We?</h1>
-            </div>
-            <div class="row">
-                <p class="desctext">
-                    We are the official incubation arm of BITS, Pilani, Dubai Campus. We strive to create an environment where innovative minds get the much needed exposure to technology, business and financial support.
-                </p>
-            </div>
-
-            <div id="altbg" style="background-color:black; color:white;padding:10px;text-align: right;margin-top:3vh;margin-bottom:3vh;">                
-                <div class="row">
-                    <h1 class="specialeyecatching">What do we do?</h1>
+        <div class="container" id="maincontent" style="min-height:90vh;">
+            <div class="row" style="margin-top:12%;">
+                <div class="col-lg-6">
+                    <h1 class="specialeyecatching" style="font-size:15vh;">Why Join Us?</h1>
                 </div>
-                <div class="row">
-                    <p class="desctext">
-                        CIIED aims to find the entrepreneur in the students of the BITS Pilani, Dubai Campus. CIIED connects students with solid entrepreneurial skills, in order to form a close knit network, working together to spread the word of Entrepreneurship.
-                    </p>
+                <div class="col-1 horizontalline"></div>
+                <div class="col-lg-5" style="display:flex;align-items:center;">
+                    <ul  class="stuffstext">
+                        <li>Access to the BITS Pilani Dubai Incubator</li>
+                        <li>Networking with BITS Pilani Alumni</li>
+                        <li>Chance to get Seed grant fund</li>
+                        <li>Access to Co-Working Space</li>
+                        <li>Guiding students and faculty for IPRie through the application of patents</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md">
-                    <div class="row">
-                        <h1 class="specialeyecatching">Vision</h1>
-                    </div>
-                    <div class="row">
-                        <p class="desctext">
-                            Entrepreneurship for a purpose is our ultimate goal – to create value and impact and to nurture tomorrow's global leaders.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md">
-                    <div class="row">
-                        <h1 class="specialeyecatching">Mission</h1>
-                    </div>
-                    <div class="row">
-                        <p class="desctext">
-                            To provide a world class environment for the development of capabilities and knowledge of students in the fields of innovation, and entrepreneurship.
-                        </p>
-                    </div>
+            <div class="row" style="margin-top:12%;">
+                <div class="col-lg-12 justify-content-center text-center">
+                    ALL THIS AND MORE FOR <b>FREE</b> ONLY AT CIIED
+                    <br><br>
+                    <button class="button-59" role="button" onclick="window.open('https://linktr.ee/ciied','_blank')">JOIN US</button>
                 </div>
             </div>
-            
         </div>
 
         <!--FOOTER-->
@@ -129,13 +112,6 @@
     <script>
         function changeMargin(){
             document.getElementById("maincontent").style.marginTop = document.getElementById('topnav').getBoundingClientRect().height+'px';
-            document.getElementById("maincontent").style.paddingTop = document.getElementById('topnav').getBoundingClientRect().height+'px';
-
-            $("#altbg").css("padding-left", $("#maincontent").css('padding-left'));
-            $("#altbg").css("padding-right", $("#maincontent").css('padding-right'));
-
-            $("#altbg").css("margin-left", (-1*parseFloat($("#maincontent").css('padding-left').replace("px",""))).toString()+'px');
-            $("#altbg").css("margin-right", (-1*parseFloat($("#maincontent").css('padding-right').replace("px",""))).toString()+'px');
         }
 
         new ResizeObserver(changeMargin).observe(document.getElementById("maincontent"));
