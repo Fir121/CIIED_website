@@ -60,7 +60,7 @@
                         <a class="nav-link" href="/events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Join Us</a>
+                        <a class="nav-link" href="https://linktr.ee/ciied" target="_blank">Join Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -118,9 +118,9 @@
                         <br>
 
                         <div class="row justify-content-center" style="display:flex;flex-wrap:wrap;gap:10px;">
-                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event1" src=""><p id="textevent1"></p></a></div>
-                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event2" src=""><p id="textevent2"></p></a></div>
-                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event3" src=""><p id="textevent3"></p></a></div>
+                            <div class="col-lg" style="text-align:center;"><a id="link1" href="#"><img class="eventgrid" id="event1" src=""><p id="textevent1"></p></a></div>
+                            <div class="col-lg" style="text-align:center;"><a id="link2" href="#"><img class="eventgrid" id="event2" src=""><p id="textevent2"></p></a></div>
+                            <div class="col-lg" style="text-align:center;"><a id="link3" href="#"><img class="eventgrid" id="event3" src=""><p id="textevent3"></p></a></div>
                         </div>
                         <script>
                             $.getJSON( "json/events.json", function( data ) {
@@ -128,6 +128,7 @@
                                 for (i=0; i<eventslist.length; i++){
                                     document.getElementById("event"+(i+1).toString()).src = eventslist[i].coverimage;
                                     document.getElementById("textevent"+(i+1).toString()).innerHTML = eventslist[i].name;
+                                    document.getElementById("link"+(i+1).toString()).href = "/events.html#"+eventslist[i].name;
                                 }
                                 
                             });
