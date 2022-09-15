@@ -364,16 +364,25 @@ iframe{
 }
 
 .eventgrid{
-  width:100%;
+  width:100% !important;
   aspect-ratio: 1 / 1;
   margin:0;
   object-fit: cover;
-  transition: .2s;
+  transition: .5s;
+  z-index: 1;
+  position: relative;
 }
 
 .eventgrid:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
 
 
 /* for events html */
@@ -463,11 +472,15 @@ iframe{
   position: absolute;
 }
 .prev{
+  border: none;
+outline:none;
   left:10px;
   top: 50%;
   transform: translateY(-50%);
 }
 .next{
+  border: none;
+outline:none;
   right:10px;
   top: 50%;
   transform: translateY(-50%);
