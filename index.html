@@ -117,15 +117,11 @@
                         
                         <br>
 
-
-                        <div class="row">
-                            <div class="col-lg justify-content-center" style="display:flex;flex-wrap:wrap;gap:10px;">
-                                <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event1" src=""><p id="textevent1"></p></a></div>
-                                <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event2" src=""><p id="textevent2"></p></a></div>
-                                <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event3" src=""><p id="textevent3"></p></a></div>
-                            </div>
+                        <div class="row justify-content-center" style="display:flex;flex-wrap:wrap;gap:10px;">
+                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event1" src=""><p id="textevent1"></p></a></div>
+                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event2" src=""><p id="textevent2"></p></a></div>
+                            <div class="col-lg" style="text-align:center;"><a href="/events.html"><img class="eventgrid" id="event3" src=""><p id="textevent3"></p></a></div>
                         </div>
-
                         <script>
                             $.getJSON( "json/events.json", function( data ) {
                                 var eventslist = data.events.slice(0,3);
