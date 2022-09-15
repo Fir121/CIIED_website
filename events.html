@@ -110,14 +110,15 @@
                 if (count == imagearray.length){
                     count = 0;
                 }
-                document.getElementById('mainimg').src = imagearray[count];
+                $('#mainimg').attr("src", imagearray[count]);
+                //document.getElementById('mainimg').src = imagearray[count];
             }
             function previousImg(){
                 count--;
                 if (count == -1){
                     count = imagearray.length-1;
                 }
-                document.getElementById('mainimg').src = imagearray[count];
+                $('#mainimg').attr("src", imagearray[count]);
             }
 
             $("#nextbut").click(function() {

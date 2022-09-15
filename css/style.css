@@ -451,6 +451,8 @@ a{
   object-fit: contain;
 }
 .closer{
+  border: none;
+outline:none;
   border-radius: 999px;
   width:3rem;
   height:3rem;
