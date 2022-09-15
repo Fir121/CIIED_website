@@ -1,5 +1,13 @@
 // SCROLL EFFECTS - Header Shadow, BITS PARALLAX, TEXT APPEARANCE
 addEventListener('scroll', (event) => {
+    //  Header Shadow
+    if (this.scrollY == 0){
+        document.getElementById("topnav").style.boxShadow  = "0 0 0 0";
+    }
+    else{
+        document.getElementById("topnav").style.boxShadow  = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    }
+    
     // Parallax
     if (document.getElementById("conts").getBoundingClientRect().top >= document.getElementById('bitsimage').getBoundingClientRect().height){
         if (document.getElementById("conts").style.marginTop != "0px"){
@@ -22,13 +30,7 @@ addEventListener('scroll', (event) => {
     }
 
 
-    //  Header Shadow
-    if (this.scrollY == 0){
-        document.getElementById("topnav").style.boxShadow  = "0 0 0 0";
-    }
-    else{
-        document.getElementById("topnav").style.boxShadow  = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-    }
+    
 
     //  TEXT APPEARANCE
     if (this.scrollY <= 225){

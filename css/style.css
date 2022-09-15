@@ -488,3 +488,14 @@ outline:none;
   transform: translateY(-50%);
 }
 /* end event html */
+
+/* aboutus html */
+  .specialeyecatching{
+    font-size: 10vh;
+    font-weight: bolder;
+  }
+
+  .desctext{
+    font-size: large;
+  }
+/* end aboutus html */
