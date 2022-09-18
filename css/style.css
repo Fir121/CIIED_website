@@ -37,16 +37,26 @@ body{
 /*END*/
 
 /*PARALLAX CSS*/
+.bgvideo{
+  position: fixed;
+  height: 100vh;
+  width:100vw;
+  z-index: 0;
+  object-fit: cover;
+}
+
 .parallax-acronym{
     position: fixed;
     height: 100vh;
-    width:100%;
+    width:100vw;
     z-index: 0;
+    /*
     background-image: url("/assets/background.gif");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
     background-color: white;
+    */
     margin-top: 20vh;
     overflow:hidden;    
 }
