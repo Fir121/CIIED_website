@@ -27,6 +27,7 @@
     </head>
 
     <body>
+        <div id="loading-loop" class="loading-loop lds-dual-ring" style="display:none;"></div>
         <!--HEADER BAR-->
         <nav class="navbar navbar-custom fixed-top navbar-expand-lg" id="topnav">
             <div class="container-fluid">
@@ -111,13 +112,26 @@
                 if (count == imagearray.length){
                     count = 0;
                 }
+                var tmpImg = new Image();
+                tmpImg.src = $('#mainimg').attr('src');
+                tmpImg.onload = function() {
+                    $("#loading-loop").hide();
+                } ;
+                $("#loading-loop").show();
                 $('#mainimg').attr("src", imagearray[count]);
+                
             }
             function previousImg(){
                 count--;
                 if (count == -1){
                     count = imagearray.length-1;
                 }
+                var tmpImg = new Image();
+                tmpImg.src = $('#mainimg').attr('src');
+                tmpImg.onload = function() {
+                    $("#loading-loop").hide();
+                } ;
+                $("#loading-loop").show();
                 $('#mainimg').attr("src", imagearray[count]);
             }
 
