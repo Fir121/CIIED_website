@@ -79,7 +79,7 @@
 
         <!-- SLIDESHOW POPUP -->
         <div id="popup" class="popupoverlay" style="display:none;">
-            <button onclick="count=0;$('#popup').hide();" class="closer">X</button>
+            <button onclick="count=0;$('#nextbut').show();$('#prevbut').show();$('#popup').hide();" class="closer">X</button>
             <img id="mainimg" class="popupimage" src="">
             <button id="prevbut" class="prev"><</button>
             <button id="nextbut" class="next">></button>
@@ -148,6 +148,11 @@
                 $('#popup').show();
 
                 document.getElementById('mainimg').src = imagearray[0];
+
+                if (imagearray.length == 1){
+                    $("#nextbut").hide();
+                    $("#prevbut").hide();
+                }
                 return;
             }
 
