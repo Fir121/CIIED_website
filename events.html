@@ -116,9 +116,7 @@
                 if (count == imagearray.length){
                     count = 0;
                 }
-                var tmpImg = new Image();
-                tmpImg.src = $('#mainimg').attr('src');
-                tmpImg.onload = function() {
+                document.getElementById("mainimg").onload = function() {
                     $("#loading-loop").hide();
                 } ;
                 $("#loading-loop").show();
@@ -130,9 +128,7 @@
                 if (count == -1){
                     count = imagearray.length-1;
                 }
-                var tmpImg = new Image();
-                tmpImg.src = $('#mainimg').attr('src');
-                tmpImg.onload = function() {
+                document.getElementById("mainimg").onload = function() {
                     $("#loading-loop").hide();
                 } ;
                 $("#loading-loop").show();
