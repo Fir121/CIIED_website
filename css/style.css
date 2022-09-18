@@ -164,8 +164,14 @@ body{
 
 .normal{
     font-size: var(--font-size-normal);
-    text-align:justify;  
-    text-justify:auto;
+    
+}
+
+@media only screen and (min-width: 576px) {
+    .normal{
+      text-align:justify;  
+      text-justify:auto;
+    }
 }
 
 .alt-bg{
