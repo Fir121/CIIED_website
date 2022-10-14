@@ -383,7 +383,7 @@ iframe{
   width:100% !important;
   aspect-ratio: 1 / 1;
   margin:0;
-  object-fit: cover;
+  object-fit: contain;
   transition: .5s;
   z-index: 1;
   position: relative;
@@ -430,7 +430,7 @@ a{
   width:50%;
   height: 100%;
   border-radius: 0 25px 25px 0;
-  object-fit: cover;
+  object-fit: contain;
   padding:10px;
   overflow:scroll;
 }
