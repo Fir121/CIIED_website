@@ -374,8 +374,8 @@ iframe{
 
 @media (max-width: 1000px) {
   .carousel-item{
-    padding-left:6vw !important;
-    padding-right:6vw !important;
+    padding-left:8vw !important;
+    padding-right:8vw !important;
   }
 }
 
