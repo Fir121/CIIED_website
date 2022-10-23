@@ -417,6 +417,8 @@ a{
 
   display:flex;
   flex-wrap: wrap;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
 }
 .splide__pagination__page.is-active{
   background-color: black !important;
