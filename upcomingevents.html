@@ -74,8 +74,8 @@
                             Events
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/upcomingevents.html">Upcoming</a></li>
-                            <li><a class="dropdown-item active" href="/events.html">Past</a></li>
+                            <li><a class="dropdown-item active" href="/upcomingevents.html">Upcoming</a></li>
+                            <li><a class="dropdown-item" href="/events.html">Past</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -104,14 +104,14 @@
         <div class="container" id="maincontent" >
             <div class="row">
               <div class="col-lg-12 heading" style="text-align:center;">
-                OUR PAST EVENTS
+                OUR UPCOMING EVENTS
                 <hr/>
               </div>
             </div>
 
             <br>
         </div>
-        <div class="container splide">
+        <div class="container splide" id="holderc">
 
             <div class="row splide__track">
                 <ul class=" splide__list" id="jsonfill">
@@ -219,9 +219,17 @@
                 Autoplay = splide.Components.Autoplay;
             }
 
-            $.getJSON( "json/events.json", function( data ) {
+            $.getJSON( "json/upcomingevents.json", function( data ) {
                 var eventslist = data.events;
                 var ul = document.getElementById("jsonfill");
+                if (eventslist.length == 0){
+                    document.getElementById("holderc").style.minHeight = "90vh"; 
+                    document.getElementById("holderc").style.visibility = "visible";
+                    document.getElementById("holderc").style.textAlign = "center"; 
+                    document.getElementById("holderc").innerHTML = "No Upcoming Events Right Now Check Back Later";
+                    flag = false;
+                    return;
+                }
                 for (i=0; i<eventslist.length; i++){
                     li = document.createElement('li');
                     li.setAttribute('class','splide__slide verticalcarouselback');

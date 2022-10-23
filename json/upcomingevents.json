@@ -1,0 +1,10 @@
+{
+    "events":[
+        {
+            "name":"Sample Upcoming Event",
+            "desc":"This is sample upcoming event coming on 32 October.",
+            "coverimage":"https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+            "otherimages":[]
+        }
+    ]
+}
