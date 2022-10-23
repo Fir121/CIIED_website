@@ -412,16 +412,12 @@ a{
   transform: translate(-50%, 0);
   margin:auto;
   border-radius: 20px;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 3px rgb(196, 196, 196);
   transition: .5s;
 
   display:flex;
   flex-wrap: wrap;
 }
-.verticalcarouselback:hover{
-  box-shadow: 0px 0px 3px rgb(196, 196, 196);
-}
-
 .splide__pagination__page.is-active{
   background-color: black !important;
 }
@@ -480,6 +476,7 @@ outline:none;
   position: absolute;
   top:10px;
   right: 10px;
+  z-index: 99999;
 }
 
 .prev, .next{
