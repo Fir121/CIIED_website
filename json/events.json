@@ -1,6 +1,13 @@
 {
     "events":[
         {
+            "name":"ACM x CIIED Hackathon",
+            "desc":"The ACM Hackathon 2022 in association with CIIED was conducted on the 6th and 7th of October and it saw a massive turnaround with 28 teams in total, pitching their idea to the judges. The Hackathon provided a platform to all students, that motivated and encouraged students to prepare themselves to participate in hackathons and enabling more startups and possibly some unicorns in the future from the BPDC Campus.<br><br><a href='https://drive.google.com/drive/folders/1CpTQGnUZXq8Wg4l6B331migDHBJuIgm-' target='_blank' style='color:blue'>Images Here</a>",
+            "coverimage":"https://i.postimg.cc/J7kktYT1/asd.png",
+            "otherimages":[
+            ]
+        },
+        {
             "name":"Empower",
             "desc":"EmPower organised by CIIED and WSC teams is a one of its kind business and entrepreneurship festival held on the grounds of BITS PILANI Dubai Campus. EmPower was brought by co-organizer's Kregzo  and title partner Zoho, payment partner Tap payments, F&B partner Hunter Foods, Printing Partner Desco, and Bronze Partner Revolution Swimming Academy.  The festival witnessed students from several Universities across UAE which include SP Jain School of Global Management, Dubai, Manipal University Dubai, Amity University and more. EmPower featured strategic  and fun business events such as the Pitch Verse, faculty pitch, CEO Club, Mock Stock ,IPL Auction, Money Heist, CEO Club etc.",
             "coverimage":"https://i.postimg.cc/J0fMM9d2/empower.jpg",
