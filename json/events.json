@@ -1,6 +1,12 @@
 {
     "events":[
         {
+            "name":"Mantra Awards",
+            "desc":"The Mantra Awards recognize and reward outstanding students who have demonstrated extraordinary leadership potential and/or entrepreneurial initiative.<br>These are the categories for this initiative:<br><br> 1. Mantra Award for Outstanding Leadership – 2 awards (1 male, 1 female)<br> 2. Mantra Entrepreneur of the Year Award<br> 3. Mantra Award for Social Leadership<br> 4. Mantra Innovator of the Year Award",
+            "coverimage":"https://i.postimg.cc/D0NPsbqN/unnamed.jpg",
+            "otherimages":[]
+        },
+        {
             "name":"ACM x CIIED Hackathon",
             "desc":"The ACM Hackathon 2022 in association with CIIED was conducted on the 6th and 7th of October and it saw a massive turnaround with 28 teams in total, pitching their idea to the judges. The Hackathon provided a platform to all students, that motivated and encouraged students to prepare themselves to participate in hackathons and enabling more startups and possibly some unicorns in the future from the BPDC Campus.<br><br><a href='https://drive.google.com/drive/folders/1CpTQGnUZXq8Wg4l6B331migDHBJuIgm-' target='_blank' style='color:blue'>Images Here</a>",
             "coverimage":"https://i.postimg.cc/J7kktYT1/asd.png",
