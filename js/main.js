@@ -75,4 +75,4 @@ function printLetterByLetter(destination, message, speed){
     }, speed);
 }
 
-printLetterByLetter("lbyl", "Ideas are easy.<br><br>Implementation is hard.", 100);
+printLetterByLetter("lbyl", "Ideas are easy.<br><br>Implementation is difficult.", 100);
